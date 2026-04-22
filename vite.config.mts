@@ -41,6 +41,7 @@ export default defineConfig({
       '.vue',
     ],
   },
+  base: 'temp-allu-care',
   server: {
     port: 3000,
   },
