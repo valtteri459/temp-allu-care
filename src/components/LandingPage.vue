@@ -42,7 +42,7 @@
           </v-card>
         </v-col>
 
-        <v-col v-for="link in links" :key="link.link" cols="6">
+        <v-col v-for="link in links" :key="link.link" cols="12">
           <v-card
             append-icon="mdi-open-in-new"
             class="py-4"

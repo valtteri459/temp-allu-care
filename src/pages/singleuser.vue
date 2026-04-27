@@ -100,7 +100,7 @@
                   <th class="text-start">Medication</th>
                   <th class="text-start">Schedule</th>
                   <th class="text-end">Amount</th>
-                  <th class="text-start">Reson</th>
+                  <th class="text-start">Reason</th>
                 </tr>
               </thead>
               <tbody>
