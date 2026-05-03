@@ -49,17 +49,10 @@ const users: UserProfile[] = [
   },
   {
     id: 2,
-    name: 'Eero Nieminen',
+    name: 'Pentti Korhonen',
     status: 'Minor fever',
     lastUpdated: '12 minutes ago',
-    avatar: 'https://ui-avatars.com/api/?name=EN',
-  },
-  {
-    id: 3,
-    name: 'Salla Virtanen',
-    status: 'All OK',
-    lastUpdated: '40 Minutes ago',
-    avatar: 'https://ui-avatars.com/api/?name=SV',
+    avatar: 'https://ui-avatars.com/api/?name=PK',
   },
 ]
 </script>

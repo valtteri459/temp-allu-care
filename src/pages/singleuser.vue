@@ -180,8 +180,13 @@ const preferences: PreferenceItem[] = [
 ]
 
 const newsletterSubscriptions: NewsletterSubscription[] = [
-  { id: 1, name: 'Burana', days: 'Daily', lines: 1, description: "For general pain managemenet" },
-  { id: 2, name: 'Ketamine', days: 'Wednesday', lines: 15, description: "For fun" },
-  { id: 3, name: 'Ketipinor', days: 'Hourly', lines: 5, description: "For fun" },
+  { id: 1, name: 'Burana', days: 'Twice daily when needed', lines: 1, description: "Pain management" },
+  { id: 2, name: 'Amlodipiini', days: 'Daily 8:00', lines: 1, description: "Blood pressure" },
+  { id: 3, name: 'Atorvastatiini', days: 'Daily 14:00', lines: 1, description: "Cholesterol" },
+  { id: 4, name: 'Panadol', days: 'Daily 8:00 14:00 20:00', lines: 1, description: "Pain management" },
+  { id: 5, name: 'Furesis', days: 'Twice daily 8:00 and 14:00', lines: 1, description: "Fluid management" },
+  { id: 6, name: 'Lisävitamiini', days: 'Daily 8:00', lines: 1, description: "General upplements" },
+  { id: 7, name: 'Norspan (Buprenorfiini)', days: 'Weekly', lines: 1, description: "Chronic pain" },
+  { id: 7, name: 'bisoprolol', days: 'Daily 8:00', lines: 1, description: "Heartbeat" },
 ]
 </script>
