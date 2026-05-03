@@ -140,10 +140,10 @@ interface ChatMessage {
 }
 
 const user: User = {
-  name: 'Aino Korhonen',
-  status: 'Kaikki OK',
+  name: 'Anna Mäkinen',
+  status: 'Kotilomalla',
   lastUpdated: '5 minuuttia sitten',
-  avatar: 'https://ui-avatars.com/api/?name=LL',
+  avatar: 'https://ui-avatars.com/api/?name=AM',
 }
 
 const events: EventItem[] = [
@@ -168,24 +168,21 @@ interface NewsletterSubscription {
 
 const chatHistory: ChatMessage[] = [
   { id: 1, sender: 'Sami - hoitaja', message: 'Käy hyvin', time: '08:10' },
-  { id: 2, sender: 'Minä', message: 'Olisiko mahdollista tulla vierailemaan huomenna iltapäivästä', time: '08:20' },
-  { id: 3, sender: 'Pentti - lääkäri', message: 'Kaikki kunnossa', time: '08:15' },
+  { id: 2, sender: 'Minä', message: 'Tuomme hänet takaisin 2 viikon päästä', time: '08:20' },
+  { id: 3, sender: 'Pentti - lääkäri', message: 'Lääkitys tarkistettu, päästetty kotilomalle', time: '08:15' },
 ]
 
 const preferences: PreferenceItem[] = [
-  { id: 1, label: 'DNR', value: 'Ei voimassa' },
-  { id: 2, label: 'Hoitorajoitukset', value: 'Ei ole' },
-  { id: 3, label: 'Muuta huomioitavaa', value: 'Allerginen antibiootille: Penisiliini. Anafylaksia shokki, kalalle.' },
+  { id: 1, label: 'DNR', value: 'On.' },
+  { id: 2, label: 'Limitation on care', value: 'Ei ole' },
+  { id: 3, label: 'Other notables', value: 'Aggressiivinen mies hoitajille. On kotilomalla' },
 ]
 
 const newsletterSubscriptions: NewsletterSubscription[] = [
-  { id: 1, name: 'Burana', days: 'Kahdesti päivässä tarpeen mukaan', lines: 1, description: "Kivun hallintaan" },
-  { id: 2, name: 'Amlodipiini', days: 'Päivittäin 8:00', lines: 1, description: "Verenpaineen alennukseen" },
-  { id: 3, name: 'Atorvastatiini', days: 'Päivittäin 14:00', lines: 1, description: "Kolesterolin hallintaan" },
-  { id: 4, name: 'Panadol', days: 'Päivittäin 8:00 14:00 20:00', lines: 1, description: "Kivun hallintaan" },
-  { id: 5, name: 'Furesis', days: 'Kahdesti päivässä 8:00 and 14:00', lines: 1, description: "nestetasojen hallintaan" },
-  { id: 6, name: 'Lisävitamiini', days: 'Päivittäin 8:00', lines: 1, description: "Lisäravinteet" },
-  { id: 7, name: 'Norspan (Buprenorfiini)', days: 'Viikottain', lines: 1, description: "Krooniseen kipuun" },
-  { id: 7, name: 'bisoprolol', days: 'Päivittäin 8:00', lines: 1, description: "Sydämmen tahdistus" },
+  { id: 1, name: 'Burana', days: 'Päivittäin 8:00 14:00', lines: 1, description: "Kivun hallintaan" },
+  { id: 2, name: 'Panadol', days: 'Päivittäin 8:00 14:00', lines: 1, description: "Kivun hallintaan" },
+  { id: 3, name: 'Somac', days: 'Päivittäin 8:00 14:00', lines: 1, description: "Kivun hallintaan" },
+  { id: 3, name: 'Bioprolol', days: 'Päivittäin 8:00 14:00', lines: 1, description: "Kivun hallintaan" },
+  { id: 3, name: 'Furesis', days: 'Päivittäin 8:00 14:00', lines: 2, description: "Nakkien hallintaan" },
 ]
 </script>

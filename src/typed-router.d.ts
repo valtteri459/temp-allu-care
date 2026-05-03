@@ -51,6 +51,34 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/singlefive': RouteRecordInfo<
+      '/singlefive',
+      '/singlefive',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/singlefour': RouteRecordInfo<
+      '/singlefour',
+      '/singlefour',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/singlethree': RouteRecordInfo<
+      '/singlethree',
+      '/singlethree',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/singletwo': RouteRecordInfo<
+      '/singletwo',
+      '/singletwo',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/singleuser': RouteRecordInfo<
       '/singleuser',
       '/singleuser',
@@ -86,6 +114,30 @@ declare module 'vue-router/auto-routes' {
     'src/pages/professional.vue': {
       routes:
         | '/professional'
+      views:
+        | never
+    }
+    'src/pages/singlefive.vue': {
+      routes:
+        | '/singlefive'
+      views:
+        | never
+    }
+    'src/pages/singlefour.vue': {
+      routes:
+        | '/singlefour'
+      views:
+        | never
+    }
+    'src/pages/singlethree.vue': {
+      routes:
+        | '/singlethree'
+      views:
+        | never
+    }
+    'src/pages/singletwo.vue': {
+      routes:
+        | '/singletwo'
       views:
         | never
     }

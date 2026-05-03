@@ -8,7 +8,7 @@
       />-->
 
       <div class="mb-8 text-center">
-        <div class="text-body-medium font-weight-light mb-n1">Welcome to</div>
+        <div class="text-body-medium font-weight-light mb-n1">Tervetuloa palvelun demoon</div>
         <div class="text-display-medium font-weight-bold">NakkiCare</div>
       </div>
 
@@ -30,13 +30,13 @@
             </template>
 
             <template #title>
-              <div class="my-title my-uppercase text-headline-medium font-weight-bold">Get started</div>
+              <div class="my-title my-uppercase text-headline-medium font-weight-bold">Aloita</div>
             </template>
 
             <template #subtitle>
               <div class="text-body-large">
                 <!--Change this page by updating <v-kbd>{{ `<HelloWorld />` }}</v-kbd> in <v-kbd>components/HelloWorld.vue</v-kbd>.-->
-                Select one of the views from below to proceed
+                Valitse alhaalta esimerkkinäkymä tietystä näkökulmasta
               </div>
             </template>
           </v-card>
@@ -69,14 +69,14 @@
     {
       link: '/endusers',
       icon: 'mdi-text-box-outline',
-      subtitle: "Landing page for the resident's relatives",
-      title: 'Relatives',
+      subtitle: "Aloitussivu lähiomaisille",
+      title: 'Lähiomaiset',
     },
     {
       link: 'professional',
       icon: 'mdi-star-circle-outline',
-      subtitle: 'Landing page for the care personel',
-      title: 'Professionals',
+      subtitle: 'Esimerkki aloitussivu hoivayksikön ammattilaisille',
+      title: 'Ammattilaiset',
     },
   ]
 </script>

@@ -140,9 +140,9 @@ interface ChatMessage {
 }
 
 const user: User = {
-  name: 'Aino Korhonen',
-  status: 'Kaikki OK',
-  lastUpdated: '5 minuuttia sitten',
+  name: 'Pentti Korhonen',
+  status: 'Matala kuume',
+  lastUpdated: '12 minuuttia sitten',
   avatar: 'https://ui-avatars.com/api/?name=LL',
 }
 
@@ -173,19 +173,16 @@ const chatHistory: ChatMessage[] = [
 ]
 
 const preferences: PreferenceItem[] = [
-  { id: 1, label: 'DNR', value: 'Ei voimassa' },
-  { id: 2, label: 'Hoitorajoitukset', value: 'Ei ole' },
-  { id: 3, label: 'Muuta huomioitavaa', value: 'Allerginen antibiootille: Penisiliini. Anafylaksia shokki, kalalle.' },
+  { id: 1, label: 'DNR', value: 'Voimassa' },
+  { id: 2, label: 'Rajoitustoimet', value: 'MG-Vyö' },
+  { id: 3, label: 'Muuta huomioitavaa', value: 'Kaatuu, satuttaa itsensä. Joka vuorokausi tarkistetaan tilanne uudelleen.' },
 ]
 
 const newsletterSubscriptions: NewsletterSubscription[] = [
-  { id: 1, name: 'Burana', days: 'Kahdesti päivässä tarpeen mukaan', lines: 1, description: "Kivun hallintaan" },
-  { id: 2, name: 'Amlodipiini', days: 'Päivittäin 8:00', lines: 1, description: "Verenpaineen alennukseen" },
   { id: 3, name: 'Atorvastatiini', days: 'Päivittäin 14:00', lines: 1, description: "Kolesterolin hallintaan" },
   { id: 4, name: 'Panadol', days: 'Päivittäin 8:00 14:00 20:00', lines: 1, description: "Kivun hallintaan" },
   { id: 5, name: 'Furesis', days: 'Kahdesti päivässä 8:00 and 14:00', lines: 1, description: "nestetasojen hallintaan" },
   { id: 6, name: 'Lisävitamiini', days: 'Päivittäin 8:00', lines: 1, description: "Lisäravinteet" },
   { id: 7, name: 'Norspan (Buprenorfiini)', days: 'Viikottain', lines: 1, description: "Krooniseen kipuun" },
-  { id: 7, name: 'bisoprolol', days: 'Päivittäin 8:00', lines: 1, description: "Sydämmen tahdistus" },
 ]
 </script>

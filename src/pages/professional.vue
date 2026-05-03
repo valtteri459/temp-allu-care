@@ -1,13 +1,13 @@
 <template>
   <v-container class="py-6">
     <div class="mb-6">
-      <h1 class="text-h4">Patients in this care unit</h1>
-      <p class="text-body-2 text-secondary">List of patients manageable from current station</p>
+      <h1 class="text-h4">Hoitoyksikön asiakkaat</h1>
+      <p class="text-body-2 text-secondary">Lista hoitoyksikön asiakkaista, joita nykyinen käyttäjä voi hallinnoida.</p>
     </div>
 
     <v-card>
       <v-card-title>
-        <div class="text-h6">Patients</div>
+        <div class="text-h6">Asiakkaat</div>
       </v-card-title>
 
       <v-data-table
@@ -31,9 +31,9 @@
             size="small"
             color="primary"
             variant="outlined"
-            @click="viewDetails(item)"
+            :to="item.link"
           >
-            View details
+            Näytä tiedot
           </v-btn>
         </template>
       </v-data-table>
@@ -48,40 +48,37 @@ interface User {
   id: number
   name: string
   status: string
+  link: string
 }
 
 const router = useRouter()
 
 const headers = [
-  { title: 'Name', key: 'name' },
-  { title: 'Status', key: 'status' },
-  { title: 'Actions', key: 'actions', sortable: false },
+  { title: 'Nimi', key: 'name' },
+  { title: 'Tila', key: 'status' },
+  { title: 'Toiminnot', key: 'actions', sortable: false },
 ]
 
 const users: User[] = [
-  { id: 1, name: 'Aino Korhonen', status: 'OK' },
-  { id: 2, name: 'Eero Nieminen', status: 'Out temporarily' },
-  { id: 3, name: 'Salla Virtanen', status: 'Sick' },
-  { id: 4, name: 'Mikko Laine', status: 'Critical' },
-  { id: 5, name: 'Anna Mäkinen', status: 'Other' },
+  { id: 1, name: 'Aino Korhonen', status: 'OK', link: "/singleuser" },
+  { id: 2, name: 'Eero Nieminen', status: 'Saattohoidossa', link: "/singlethree" },
+  { id: 3, name: 'Pentti Korhonen', status: 'Kipeä', link: "/singletwo" },
+  { id: 4, name: 'Mikko Laine', status: 'Kriittinen', link: "/singlefour" },
+  { id: 5, name: 'Anna Mäkinen', status: 'Muu', link: "/singlefive" },
 ]
 
 const getStatusColor = (status: string): string => {
   switch (status) {
     case 'OK':
       return 'success'
-    case 'Out temporarily':
+    case 'Saattohoidossa':
       return 'grey'
-    case 'Sick':
+    case 'Kipeä':
       return 'warning'
-    case 'Critical':
+    case 'Kriittinen':
       return 'error'
     default:
       return 'primary'
   }
-}
-
-const viewDetails = (user: User) => {
-  router.push('/singleuser')
 }
 </script>

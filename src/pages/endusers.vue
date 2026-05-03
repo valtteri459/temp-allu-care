@@ -2,13 +2,13 @@
   <v-container class="py-6">
     <div class="d-flex flex-column gap-4">
       <div>
-        <h1 class="text-h4">Your relatives</h1>
-        <p class="text-body-2 text-secondary">If your relatives are not on this list, contact your care facility to add them.</p>
+        <h1 class="text-h4">Sinun läheiset</h1>
+        <p class="text-body-2 text-secondary">Jos sinun läheisiä ei näy listalla, ole yhteydessä hoitopaikan henkilökuntaan.</p>
       </div>
 
       <v-row align="stretch" dense>
         <v-col cols="12" md="6" lg="4" v-for="user in users" :key="user.id">
-          <v-card class="h-100" :to="'/singleuser'">
+          <v-card class="h-100" :to="user.link">
             <v-card-title class="gap-4">
               <v-avatar size="56">
                 <v-img :src="user.avatar" alt="Profile image" />
@@ -20,7 +20,7 @@
             </v-card-title>
 
             <v-card-text>
-              <div class="text-caption text-uppercase mb-2">Last updated</div>
+              <div class="text-caption text-uppercase mb-2">Viimeksi päivitetty</div>
               <div class="text-body-2">{{ user.lastUpdated }}</div>
             </v-card-text>
           </v-card>
@@ -37,22 +37,25 @@ interface UserProfile {
   status: string
   lastUpdated: string
   avatar: string
+  link: string
 }
 
 const users: UserProfile[] = [
   {
     id: 1,
     name: 'Aino Korhonen',
-    status: 'All OK',
-    lastUpdated: '20 minutes ago',
+    status: 'Kaikki OK',
+    lastUpdated: '20 minuuttia sitten',
     avatar: 'https://ui-avatars.com/api/?name=AK',
+    link: '/singleuser'
   },
   {
     id: 2,
     name: 'Pentti Korhonen',
-    status: 'Minor fever',
-    lastUpdated: '12 minutes ago',
+    status: 'Matala kuume',
+    lastUpdated: '12 minuuttia sitten',
     avatar: 'https://ui-avatars.com/api/?name=PK',
+    link: '/singletwo'
   },
 ]
 </script>
