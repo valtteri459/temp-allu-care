@@ -9,7 +9,7 @@
 
       <div class="mb-8 text-center">
         <div class="text-body-medium font-weight-light mb-n1">Tervetuloa palvelun demoon</div>
-        <div class="text-display-medium font-weight-bold">NakkiCare</div>
+        <div class="text-display-medium font-weight-bold">Hand i hand</div>
       </div>
 
       <v-row>
